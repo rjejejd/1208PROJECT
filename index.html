@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임플랫폼</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            width: 100%;
+            background-color: black;
+        }
+
+        header div {
+
+            text-align: center;
+            background-color: black;
+            color: white;
+
+        }
+
+        nav ul {
+            background-color: black;
+        }
+
+        .search {
+            width: 300px;
+        }
+
+        input {
+            border: solid 1px black;
+            border-radius: 10px;
+            margin-left: 10px;
+            width: 200px;
+
+        }
+
+        img {
+            width: 20px;
+        }
+
+        button {
+            border: none;
+            margin-right: 30px;
+        }
+
+        .ser {
+            background-color: black;
+            float: left;
+
+        }
+
+        #carouselExampleAutoplaying {
+            margin-top: 20px;
+            height: 500px;
+            width: 800px;
+            margin-left: 300px;
+        }
+        .col {
+            width: 400px;
+            height: 400px;
+            margin-right: 40px;
+            margin-left: 35px;
+            margin-top: 50px
+            
+        }
+
+        article {
+            display: inline-block;
+            margin-top: 2px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            clear: both;
+            
+        }
+
+        .login {
+            width: 300px;
+            height: 150spx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 5px;
+            float: right;
+
+        }
+
+        .login input {
+            margin-bottom: 10px;
+            height: 35px;
+        }
+        .card-body {
+            margin-top: 20px;
+            color: white;
+            
+        }
+        footer{
+            margin-top:100px;
+            background-color: gray;
+            width: 100%;
+            height: 120px;
+            display: inline-block;
+        }
+        h4{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>게임스토어</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="menu">
+            <ul>
+                <a href="index.html"><button type="button" class="btn btn-dark">STORE</button></a>
+                <a href="board.html"><button type="button" class="btn btn-dark">게시판</button></a>
+            </ul>
+        </div>
+    </nav>
+    <nav>
+        <div class="ser">
+            <input type="text" placeholder="스토어 검색">
+            <button class="serbtn">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </button>
+        </div>
+    </nav>
+    <nav>
+        <div class="login">
+            <form method="post" action="loginchk" id="login-form">
+                <input type="text" name="userName" placeholder="ID">
+                <input type="password" name="userPassword" placeholder="Password">
+                <input type="submit" value="로그인">
+                <a href="join.html"><input type="button" value="회원가입"></a>
+            </form>
+        </div>
+    </nav>
+    <article>
+        <section>
+            <div>
+                <신작>
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section>
+            <인기작>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/Animal_Crossing_New_Horizons.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">동물의숲</h5>
+                                <p class="card-text">동물이 싸우는 게임<br>가격:100000000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/bg.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">배그</h5>
+                                <p class="card-text">사람 죽이는 게임<br>가격:500000000원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="img/League_of_Legends.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">롤</h5>
+                                <p class="card-text">상대 안부 묻는 게임<br>가격:9999999원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </article>
+    <footer>
+        <h4>
+       주소: 수원시 팔달구 인계동 | 대표번호:010-1234-5678 | 이메일:abc123@google.com<br>
+        사업자등록번호:123-45-67890 | 대표이사: 고이영동주현
+        </h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임플랫폼</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            width: 100%;
+            background-color: black;
+        }
+
+        header div {
+
+            text-align: center;
+            background-color: black;
+            color: white;
+
+        }
+
+        nav ul {
+            background-color: black;
+        }
+
+        .search {
+            width: 300px;
+        }
+
+        input {
+            border: solid 1px black;
+            border-radius: 10px;
+            margin-left: 10px;
+            width: 200px;
+
+        }
+
+        img {
+            width: 20px;
+        }
+
+        button {
+            border: none;
+            margin-right: 30px;
+        }
+
+        .ser {
+            background-color: black;
+            float: left;
+
+        }
+
+        #carouselExampleAutoplaying {
+            margin-top: 20px;
+            height: 500px;
+            width: 800px;
+            margin-left: 300px;
+        }
+
+        .col {
+            width: 400px;
+            height: 400px;
+            margin-right: 40px;
+            margin-left: 35px;
+            margin-top: 50px
+        }
+
+        article {
+            display: inline-block;
+            margin-top: 2px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            clear: both;
+
+        }
+
+        .login {
+            width: 300px;
+            height: 150spx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 5px;
+            float: right;
+
+        }
+
+        .login input {
+            margin-bottom: 10px;
+            height: 35px;
+        }
+
+        .card-body {
+            margin-top: 20px;
+            color: white;
+
+        }
+
+        footer {
+            margin-top: 100px;
+            background-color: gray;
+            width: 100%;
+            height: 120px;
+            display: inline-block;
+        }
+
+        h4 {
+            margin-top: 30px;
+        }
+        .write{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>게임스토어</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="menu">
+            <ul>
+                <a href="index.html"><button type="button" class="btn btn-dark">STORE</button></a>
+                <a href="board.html"><button type="button" class="btn btn-dark">게시판</button></a>
+            </ul>
+        </div>
+    </nav>
+    <nav>
+        <div class="ser">
+            <input type="text" placeholder="스토어 검색">
+            <button class="serbtn">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </button>
+        </div>
+    </nav>
+    <nav>
+        <div class="login">
+            <form method="post" action="loginchk" id="login-form">
+                <input type="text" name="userName" placeholder="ID">
+                <input type="password" name="userPassword" placeholder="Password">
+                <input type="submit" value="로그인">
+                <a href="join.html"><input type="button" value="회원가입"></a>
+            </form>
+        </div>
+    </nav>
+
+    <section>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">제목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+            </tbody>
+        </table>
+        <section aria-label="...">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+        </section>
+        <section>
+            <div class="write">
+                <button type="button" class="btn btn-secondary">글쓰기</button>
+            </div>
+        </section>
+    </section>
+    </article>
+    <footer>
+        <h4>
+            주소: 수원시 팔달구 인계동 | 대표번호:010-1234-5678 | 이메일:abc123@google.com<br>
+            사업자등록번호:123-45-67890 | 대표이사: 고이영동주현
+        </h4>
+    </footer>
+</body>
+
+</html>

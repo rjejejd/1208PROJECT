@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .joinwindow {
+            text-align: center;
+            display: grid;
+            place-items: center;
+            width: 50%;
+            height: 700px;
+            background-color: gray;
+            border-radius: 5px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            border: solid 3px;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="joinwindow">
+        <h1>회원가입</h1>
+        <form action="loginPass" method="post">
+            <b>아이디</b><br>
+            <input id="text" type="text" name="UserID" placeholder="아이디"><br>
+            <b>비밀번호</b><br>
+            <input id="text" type="password" name="PW" placeholder="비밀번호"><br>
+            <b>이메일</b><br>
+            <input id="text" type="email" name="email" placeholder="E-mail"><br><br>
+            <input type="submit" name="joinbtn" value="가입하기">
+        </form>
+    </div>
+</body>
+
+</html>
